@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: "inter", ubuntu;
+    font-family: "Roboto";
 }
 
 
@@ -12,254 +14,233 @@
     --pri-c: #0000FF;
     --snd-1: #1482cc;
     --primary-font: 1rem;
-    --background-c:rgb(235, 230, 230);
+    --background-c: rgb(235, 230, 230);
 }
 
 body {
     font-size: var(--primary-font);
     background-color: rgb(235, 230, 230);
     overflow-X: hidden;
+    color: #222;
 }
 
+header {
+    background-color: #fff;
+    padding: 8px 8%;
+}
 
-.head {
-    width: 100%;
-    height: 100vh;
+.desktop-nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #fff;
-    margin-bottom: 20px;
-    background: linear-gradient(to right,var(--pri-c),black);
-
-}
-
-#hero-vd {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    background-repeat: no-repeat;
-}
-
-.desk-navi {
-    display: flex;
     justify-content: space-between;
-    padding: 10px 10%;
-    align-items: center;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
 }
 
-
-.cta {
-    padding: 12px;
-    border-radius: 8px;
-    border: 2px solid var(--pri-c);
-    background-color: transparent;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-
-.cta:hover {
-    background-color: var(--pri-c);
-}
-
-.desk-navi ul {
+.nav-link {
     display: flex;
     list-style: none;
-    column-gap: 20px;
-    font-size: 1.2rem;
+    gap: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
-    color: unset;
-    font-weight: 600;
-
-}
-
-a:active {
     color: var(--pri-c);
 }
 
-.hero-text {
-    position: absolute;
-    padding: 0 10%;
-    height: 100%;
+.cta {
+    background-color: var(--pri-c);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* .......hero section  */
+
+.hero-sec {
+    height: 100vh;
     width: 100%;
+    background: url(images/hero0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 
-#hero-h1 {
+.hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 50px;
+    font-weight: 600;
+    animation:  scale-text 1s ease-in-out ;
+}
+
+@keyframes scale-text{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes translate-btn{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.hero-cta{
+animation: 1s translate-btn ease-in-out;
+}
+
+
+.hero-content p {
     font-size: 2rem;
-    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 50px;
+     animation:  scale-text 1s ease-in-out ;
+}
+.margin-btn{
+    margin-right: 10px;
 }
 
-.hero-text h2 {
-    font-size: 4rem;
-}
-
-.hero-text h2::after {
-    content: " ";
-    background-color: #ffffff;
+.hero-content h1::after {
+    content: "";
+    animation: hero-text 5s ease-in-out infinite;
+    background-color: #fff;
     color: var(--pri-c);
-    padding: 5px 10px;
-    margin-left: 10px;
+    padding: 2px 18px;
     border-radius: 5px;
-    font-size: 3rem;
-    animation: heroanitext 4s infinite linear;
+    outline: 1px solid var(--pri-c);
 }
 
-@keyframes heroanitext {
-
+@keyframes hero-text {
     0% {
-        content: "DEVELOP";
+        content: "Develop ";
     }
 
+    55% {
+        content: "Design";
+    }
 
     100% {
-        content: "PROMOTE";
+        content: "Promote";
     }
-
 }
 
-.mobile-nav {
+.mobile-nav-cont {
     display: none;
 }
 
-/* mobile header */
-
-
-
-
-
-
-@media(max-width:900px) {
-
-    .desk-navi {
+@media (max-width: 900px) {
+    .desktop-nav {
         display: none;
     }
 
-    .mobile-nav {
-        display: flex;
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        padding: 0px 5%;
-        justify-content: space-between;
-    }
-
-    .hambuger-cont ul {
-        background-color: white;
-        color: var(--pri-c);
-        list-style: none;
-        height: 100vh;
-        padding: 10px;
-        position: absolute;
-        right: 0;
-        width: 70%;
-        top: 0;
-        z-index: 20;
-        display: none;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .hambuger-cont ul.show {
+    .mobile-nav-cont {
         display: block;
     }
 
-    .hambuger-cont ul li {
-        margin-left: 20px;
-        line-height: 3;
-        font-size: 1.2rem;
+    header {
+        padding: 5px 4%;
     }
 
-    .toggle-bar {
-        position: relative;
-        left: -20px;
-        z-index: 100;
+    .mobile-nav-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4%;
+
     }
 
-    .toggle-bar .fa-bars {
-        font-size: 2rem;
-        background-color: #fff;
-        padding: 5px 8px;
-        border-radius: 5px;
-    }
-
-
-
-    .hero-text {
-        padding: 0 5%;
-    }
-
-    #hero-h1 {
+    .mobile-link {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        width: 100%;
+        padding: 10px 4%;
         font-size: 1.4rem;
-        color: #fff;
+        line-height: 3;
+        font-weight: 700;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        background-color: #fff;
+        transition: height 1s ease-in-out;
     }
 
-    .hero-text h2 {
-        font-size: 3rem;
+    .mobile-link.active-mobile {
+        opacity: 1;
+        height: 400px;
+        overflow: auto;
     }
 
-    .hero-text h2::after {
-        font-size: 2rem;
+    .hamburger {
+        font-size: 1.5rem;
+        border: 1px solid var(--pri-c);
+        padding: 2px 8px;
     }
 
-    #hero-vd {
-        height: 80vh;
+    .hero-content h1 {
+        font-size: 4rem;
     }
 
-    .head {
-        height: 80vh;
+    .hero-content p {
+        font-size: 1.5rem;
     }
-
 }
 
+@media (max-width: 500px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 
-
-
-
-
-
+    .hero-content p {
+        font-size: 1.2rem;
+        width: 70%;
+        justify-self: center;
+    }
+}
 
 /* .......tech tools */
 
 h2 {
     text-align: center;
 }
-.tools-cont{
+
+.tools-cont {
     overflow-x: hidden;
     position: relative;
 }
 
-.tools-cont::before{
+.tools-cont::before {
     content: " ";
     position: absolute;
     width: 20%;
     height: 100px;
-    background: linear-gradient(to right, var(--background-c), rgba(0,0,0,0.0)) ;
+    background: linear-gradient(to right, var(--background-c), rgba(0, 0, 0, 0.0));
     left: 0;
     top: 70px;
     z-index: 1;
 }
-.tools-cont::after{
+
+.tools-cont::after {
     content: " ";
     position: absolute;
     width: 20%;
     height: 100px;
-    background: linear-gradient(to left,var(--background-c), rgba(0,0,0,0.0)) ;
+    background: linear-gradient(to left, var(--background-c), rgba(0, 0, 0, 0.0));
     right: 0;
     top: 70px;
     z-index: 1;
@@ -267,7 +248,7 @@ h2 {
 
 .tools {
     margin: 20px 10%;
-    animation: scrollinglogo 20s infinite linear; 
+    animation: scrollinglogo 20s infinite linear;
     white-space: nowrap;
 }
 
@@ -286,9 +267,9 @@ h2 {
     }
 }
 
-.tools  img {
+.tools img {
     width: 70px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     padding: 8px;
     gap: 20px;
     margin-right: 10px;
@@ -316,6 +297,10 @@ h2 {
 .About-us p::first-letter {
     font-size: 1.7rem;
 
+}
+.About-us p{
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .About-us {
@@ -500,7 +485,7 @@ h2 {
     border-radius: 8px;
 }
 
-.graphics-portfolio-grid{
+.graphics-portfolio-grid {
     display: flex;
     white-space: nowrap;
     background-color: unset;
