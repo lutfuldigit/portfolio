@@ -62,7 +62,7 @@ a {
 .hero-sec {
     height: 100vh;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.789), rgba(0, 0, 0, 0.789)), url(images/male\ dev.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.789), rgba(0, 0, 0, 0.789)), url(images/male\ dev.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -181,6 +181,7 @@ a {
         height: 0;
         overflow: hidden;
         background-color: #fff;
+        backdrop-filter: blur(10px);
         transition: height 1s ease-in-out;
     }
 
@@ -202,6 +203,7 @@ a {
 
     .hero-content p {
         font-size: 1.5rem;
+        justify-self: center;
     }
 }
 
@@ -499,7 +501,8 @@ h2 {
     scrollbar-width: thin;
     align-items: center;
 }
-.graphics-portfolio-grid div{
+
+.graphics-portfolio-grid div {
     width: 250px;
 }
 
