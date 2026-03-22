@@ -62,7 +62,7 @@ a {
 .hero-sec {
     height: 100vh;
     width: 100%;
-    background: url(images/hero0.jpg);
+    background: linear-gradient(rgba(165, 42, 42, 0.238), rgba(0, 0, 0, 0.789)), url(images/male\ dev.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -78,29 +78,31 @@ a {
     font-size: 5rem;
     margin-bottom: 50px;
     font-weight: 600;
-    animation:  scale-text 1s ease-in-out ;
+    animation: scale-text 1s ease-in-out;
 }
 
-@keyframes scale-text{
-    from{
+@keyframes scale-text {
+    from {
         transform: scale(0);
     }
-    to{
+
+    to {
         transform: scale(1);
     }
 }
 
-@keyframes translate-btn{
-    from{
+@keyframes translate-btn {
+    from {
         transform: translateY(100px);
     }
-    to{
+
+    to {
         transform: translateY(0);
     }
 }
 
-.hero-cta{
-animation: 1s translate-btn ease-in-out;
+.hero-cta {
+    animation: 1s translate-btn ease-in-out;
 }
 
 
@@ -108,9 +110,11 @@ animation: 1s translate-btn ease-in-out;
     font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 50px;
-     animation:  scale-text 1s ease-in-out ;
+    animation: scale-text 1s ease-in-out;
+    font-weight: 600;
 }
-.margin-btn{
+
+.margin-btn {
     margin-right: 10px;
 }
 
@@ -210,6 +214,7 @@ animation: 1s translate-btn ease-in-out;
         font-size: 1.2rem;
         width: 70%;
         justify-self: center;
+
     }
 }
 
@@ -298,21 +303,21 @@ h2 {
     font-size: 1.7rem;
 
 }
-.About-us p{
+
+.About-us p {
     text-align: justify;
     line-height: 1.5;
 }
 
 .About-us {
     display: flex;
-    margin: 50px 10%;
+    margin: 100px 10%;
     line-height: 25px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     row-gap: 20px;
     text-align: center;
-    margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
@@ -492,6 +497,10 @@ h2 {
     gap: 20px;
     overflow-x: auto;
     scrollbar-width: thin;
+    align-items: center;
+}
+.graphics-portfolio-grid div{
+    width: 250px;
 }
 
 
