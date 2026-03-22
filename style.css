@@ -181,7 +181,7 @@ a {
         height: 0;
         overflow: hidden;
         background-color: #fff;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         transition: height 1s ease-in-out;
     }
 
@@ -204,6 +204,7 @@ a {
     .hero-content p {
         font-size: 1.5rem;
         justify-self: center;
+        width: 70%;
     }
 }
 
