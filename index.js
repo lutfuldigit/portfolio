@@ -18,3 +18,22 @@ document.addEventListener("click", (e) => {
         mobileLink.classList.remove("active-mobile");
     }
 });
+
+//  page interseption 
+const interElem = document.querySelectorAll(".intersept")
+const observer = new IntersectionObserver(roll);
+
+function roll(entries){
+    entries.forEach(entry => {
+       if(entry.isIntersecting) {
+
+        entry.target.classList.add("intersept-show")
+       } else{
+        entry.target.classList.remove("intersept-show")
+       }
+    });
+}
+
+interElem.forEach(entry=>{
+    observer.observe(entry)
+})
