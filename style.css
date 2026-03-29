@@ -202,7 +202,7 @@ a {
         opacity: 0;
         height: 0;
         overflow: hidden;
-        background-color: #fffffff0;
+        background-color: #fffffffb;
         backdrop-filter: blur(10px);
         transition: height 1s ease-in-out;
     }
