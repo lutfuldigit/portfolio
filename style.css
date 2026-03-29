@@ -202,14 +202,14 @@ a {
         opacity: 0;
         height: 0;
         overflow: hidden;
-        background-color: #fff;
-        backdrop-filter: blur(15px);
+        background-color: #ffffffd0;
+        backdrop-filter: blur(10px);
         transition: height 1s ease-in-out;
     }
 
     .mobile-link.active-mobile {
         opacity: 1;
-        height: 400px;
+        height: 75vh;
         overflow: auto;
     }
 
