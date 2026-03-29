@@ -28,9 +28,7 @@ function roll(entries){
        if(entry.isIntersecting) {
 
         entry.target.classList.add("intersept-show")
-       } else{
-        entry.target.classList.remove("intersept-show")
-       }
+       } 
     });
 }
 
