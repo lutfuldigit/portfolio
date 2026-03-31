@@ -1,13 +1,13 @@
 //  mobile navition show and hide toggle
-const mobileLink= document.querySelector(".mobile-link");
-const mobileNav= document.querySelector(".mobile-nav-cont");
+const mobileLink = document.querySelector(".mobile-link");
+const mobileNav = document.querySelector(".mobile-nav-cont");
 
 
-mobileNav.addEventListener("click", (e)=>{
-    if(!e.target.classList.contains("fa-bars")) return;
-    mobileLink.classList.toggle("active-mobile"); 
+mobileNav.addEventListener("click", (e) => {
+    if (!e.target.classList.contains("fa-bars")) return;
+    mobileLink.classList.toggle("active-mobile");
 
-        e.stopPropagation(); 
+    e.stopPropagation();
 
 })
 
@@ -23,15 +23,34 @@ document.addEventListener("click", (e) => {
 const interElem = document.querySelectorAll(".intersept")
 const observer = new IntersectionObserver(roll);
 
-function roll(entries){
+function roll(entries) {
     entries.forEach(entry => {
-       if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
 
-        entry.target.classList.add("intersept-show")
-       } 
+            entry.target.classList.add("intersept-show")
+        }
     });
 }
 
-interElem.forEach(entry=>{
+interElem.forEach(entry => {
     observer.observe(entry)
+})
+
+
+//  about us text
+const aboutEle = document.querySelector(".About-us");
+const moreAboutText = document.querySelector(".more-about");
+const btn1 = document.querySelector(".read-about");
+const btn2 = document.querySelector(".showless-about");
+
+aboutEle.addEventListener("click", (e) => {
+    if (e.target.classList.contains("read-about")) {
+        moreAboutText.classList.add("showmore-about");
+        btn1.style.display = "none";
+        btn2.style.display = "block";
+    } else if (e.target.classList.contains("showless-about")) {
+        moreAboutText.classList.remove("showmore-about");
+        btn2.style.display = "none";
+        btn1.style.display = "block";
+    }
 })

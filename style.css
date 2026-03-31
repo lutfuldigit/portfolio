@@ -264,22 +264,22 @@ h2 {
 .tools-cont::before {
     content: " ";
     position: absolute;
-    width: 20%;
+    width: 40%;
     height: 100px;
     background: linear-gradient(to right, var(--background-c), rgba(0, 0, 0, 0.0));
     left: 0;
-    top: 60px;
+    top: 50px;
     z-index: 1;
 }
 
 .tools-cont::after {
     content: " ";
     position: absolute;
-    width: 20%;
+    width: 40%;
     height: 100px;
     background: linear-gradient(to left, var(--background-c), rgba(0, 0, 0, 0.0));
     right: 0;
-    top: 60px;
+    top: 50px;
     z-index: 1;
 }
 
@@ -342,7 +342,7 @@ h2 {
 }
 
 .About-us {
-    display: flex;
+    /* display: flex; */
     margin: 100px 10%;
     line-height: 25px;
     flex-wrap: wrap;
@@ -351,6 +351,32 @@ h2 {
     row-gap: 20px;
     text-align: center;
     font-size: 1.2rem;
+}
+.About-us .showless-about{
+    display: none;
+}
+.showless-about,
+.read-about{
+    padding: 10px;
+    border: none;
+    color: var(--pri-c);
+    font-weight: 600;
+    background-color: whitesmoke;
+    margin: 10px 0;
+}
+.more-about{
+    height: 0px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: 1s ease-in-out;
+}
+.About-us .read-about{
+    display: block;
+}
+
+.more-about.showmore-about{
+height: 100px;
+transform: scale(1);
 }
 
 
@@ -662,11 +688,6 @@ footer {
 }
 
 
-.footer-grid form {
-    display: flex;
-    height: 30px;
-}
-
 .footer-grid form button {
     background-color: var(--pri-c);
     color: white;
@@ -745,7 +766,7 @@ footer {
 
     .footer-grid div {
         width: auto;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     footer {
@@ -783,7 +804,10 @@ footer {
     .About-us {
         margin: 30px 5%;
     }
-
+    .footer-grid{
+        flex-direction: column;
+        align-items: start;
+    }
 
 }
 
