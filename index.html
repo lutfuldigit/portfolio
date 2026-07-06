@@ -1,448 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lutful digit | full Stack developer | Graphics designer | paid ads expert</title>
-
+    <title>Lutful Digit | Full Stack Developer & Graphics Designer</title>
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Hammed lateef | Full stack Developer Portfolio" />
-    <meta name="description"
-        content="Full Stack Developer and Graphics Designer passionate about creating stunning websites and effective paid ads that drive results." />
+    <meta property="og:title" content="Lutful Digit - Full Stack Developer & Graphics Designer" />
+    <meta name="description" content="Full Stack Developer and Graphics Designer passionate about creating stunning websites and effective paid ads that drive results." />
     <meta property="og:image" content="https://lutfuldigit.github.io/portfolio/images/preview.jpg">
     <meta property="og:url" content="https://lutfuldigit.github.io/portfolio/" />
     <meta property="og:type" content="website" />
-
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/lut-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <nav class="desktop-nav">
-            <div class="nav-logo">
-                <img src="images/lut-logo.png" width="60px" alt="lut-logo">
-            </div>
 
-
-            <ul class="nav-link">
-                <li><a href="index.html">Home</a></li>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/lut-logo.png" alt="Lutful Digit">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about-sec">About</a></li>
-                <li><a href="#service-sec">Service</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="https://wa.me/+2348164438077" class="btn btn-primary nav-cta">
+                <i class="fa-brands fa-whatsapp"></i> Get In Touch
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-            <div>
-                <a href="https://wa.me/+2348164438077">
-                    <button class="cta"> <i class="fa-brands fa-whatsapp"></i> Get In-touch</button>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">✦ Digital Agency</span>
+            <h1 class="hero-title">
+                We
+                <span class="word-rotator">
+                    <span class="word">Develop</span>
+                    <span class="word">Design</span>
+                    <span class="word">Promote</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">
+                We craft powerful digital experiences that capture attention,
+                drive growth, and build lasting online presences for businesses of all sizes.
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/+2348164438077" class="btn btn-primary btn-lg">
+                    <i class="fa-brands fa-whatsapp"></i> Start a Project
+                </a>
+                <a href="#portfolio" class="btn btn-outline btn-lg">
+                    View Our Work <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-
-        </nav>
-    </header>
-
-    <header>
-        <nav class="mobile-nav-cont">
-            <div class="nav-logo">
-                <img src="images/lut-logo.png" width="60px" alt="lut-logo">
-            </div>
-            <ul class="mobile-link">
-                <li> <i class="fa-solid fa-house-circle-check"></i> <a href="index.html">Home</a></li>
-                <li> <i class="fa-solid fa-briefcase"></i> <a href="#portfolio">Portfolio</a></li>
-                <li> <i class="fa-solid fa-circle-info"></i> <a href="#about-sec">About</a></li>
-                <li><i class="fa-solid fa-shop"></i> <a href="#service-sec">Service</a></li>
-                <li><i class="fa-solid fa-headset"></i> <a href="#footer">Contact</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-        </nav>
-    </header>
-
-    <section class="hero-sec">
-        <div class="hero-content">
-            <h1> We → </h1>
-            <div class="hero-para">
-                <p>
-                    We are a creative digital agency,
-                    focused on building strong online presences for businesses of all
-                    sizes
-                </p>
-            </div>
-
-            <div>
-                <div class="hero-cta">
-                    <a href="https://wa.me/+2348164438077">
-                        <button class="cta margin-btn"> <i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-                    </a>
-                    <a href="mailto:hammeda582@gmail.com">
-                        <button class="cta"> <i class="fa fa-envelope"></i> Email us</button>
-                    </a>
-                </div>
-
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
     </section>
 
-    <div class="tools-cont intersept">
-        <h2>- Technologies we use -</h2> <br>
-        <div class="tools">
-            <img src="images/photoshop.jpeg" alt="">
-            <img src="images/mysql.jpeg" alt="">
-            <img src="images/wordpress.jpeg" alt="">
-            <img src="images/googleads.jpeg" alt="">
-            <img src="images/html.jpeg" alt="">
-            <img src="images/javascript.jpeg" alt="">
-            <img src="images/Corel Logo.jpeg" alt="">
-            <img src="images/php.jpeg" alt="">
-            <img src="images/css.jpeg" alt="">
-            <img src="images/react.jpg" alt="">
-            <img src="images/nodejs.jpg" alt="">
-
-        </div>
-    </div>
-
-
-
-
-
-
-    <!-- about us -->
-    <main>
-
-        <div class="social-links">
-            <a href="https://web.facebook.com/lutfuldig" target="_blank"> <i class="fa-brands fa-facebook"
-                    style="color: blue;"></i>
-
-            </a><br>
-            <a href="https://wa.me/+2348164438077"></a>
-            <i class="fa-brands fa-whatsapp" style="color: green;"></i> <br>
-            <i class="fa-brands fa-linkedin"></i> <br>
-            <a href="https://github.com/hammedlateef" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-        </div>
-
-        <section class="About-us intersept">
-            <h2 id="about-sec">- About Us -</h2>
-            <p>At <span style="color: blue;">Lutful Digit,</span> We specialize in turning ideas into powerful digital
-                experiences.
-                Through professional website/app development, classic graphics, and result-driven promotion,
-                we help brands build a strong presence that captures attention and drives growth.
-
-                <p class="more-about">
-                     We believe in blending creativity with strategy, technology with design, and vision with execution.
-                    Our focus is not just on delivering services but on creating lasting value for businesses that want
-                    to stand out and succeed online.
-                </p>
-                <button class="read-about">Read More</button>
-                <button class="showless-about">Show less</button>
-                
-            </p>
-            <div class="about-img">
-                <img src="images/about-us.jpg" width="380px" alt="">
+    <!-- ===== TECH STACK ===== -->
+    <section class="tools-section">
+        <div class="section-label">Technologies We Use</div>
+        <h2 class="section-title">Our Tech Stack</h2>
+        <div class="tools-track">
+            <div class="tools-track-inner">
+                <img src="images/html.jpeg" alt="HTML">
+                <img src="images/css.jpeg" alt="CSS">
+                <img src="images/javascript.jpeg" alt="JavaScript">
+                <img src="images/react.jpg" alt="React">
+                <img src="images/nodejs.jpg" alt="Node.js">
+                <img src="images/php.jpeg" alt="PHP">
+                <img src="images/mysql.jpeg" alt="MySQL">
+                <img src="images/wordpress.jpeg" alt="WordPress">
+                <img src="images/photoshop.jpeg" alt="Photoshop">
+                <img src="images/googleads.jpeg" alt="Google Ads">
+                <img src="images/Corel Logo.jpeg" alt="Corel Draw">
+                <img src="images/html.jpeg" alt="HTML">
+                <img src="images/css.jpeg" alt="CSS">
+                <img src="images/javascript.jpeg" alt="JavaScript">
+                <img src="images/react.jpg" alt="React">
+                <img src="images/nodejs.jpg" alt="Node.js">
+                <img src="images/php.jpeg" alt="PHP">
+                <img src="images/mysql.jpeg" alt="MySQL">
+                <img src="images/wordpress.jpeg" alt="WordPress">
+                <img src="images/photoshop.jpeg" alt="Photoshop">
+                <img src="images/googleads.jpeg" alt="Google Ads">
+                <img src="images/Corel Logo.jpeg" alt="Corel Draw">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="service-card-info-section intersept">
-            <h2 id="service-sec"> - Our services -</h2> <br>
-            <div>
-                <h4 style="text-align: center;">We are dedicated to serve you all time on:</h4> <br>
-                <div class="service-card">
-
-                    <div class="service-card-info">
-                        <div class="top-info">
-                            <i class="fa-solid fa-laptop-code" style="color: white;"></i>
-                        </div> <br>
-                        <h4>Web Design & Development</h4> <br>
-                        <p>Building responsive, user-friendly
-                            websites that represent your brand and convert visitors into customers.</p>
-
-                    </div>
-
-                    <div class="service-card-info">
-                        <div class="top-info">
-                            <i class="fa-solid fa-pen-nib" style="color: white;"></i>
-                        </div> <br>
-                        <h4>Branding & Graphic Design</h4> <br>
-                        <p>Logo design, brand identity,
-                            social media creatives, and stunning visuals that make your business stand out.
-                        </p>
-                    </div>
-
-                    <div class="service-card-info">
-                        <div class="top-info">
-                            <i class="fa-solid fa-money-bill-trend-up" style="color: white;"></i>
-                        </div> <br>
-                        <h4>Digital Marketing & Promotion</h4> <br>
-                        <p>Social media marketing,
-                            content promotion, ad campaigns, and strategies to boost visibility and reach.
-                        </p>
-                    </div>
-
-                    <div class="service-card-info">
-                        <div class="top-info">
-                            <i class="fa-solid fa-magnifying-glass-location" style="color: white;"></i>
-                        </div> <br>
-                        <h4>SEO & Online Growth</h4> <br>
-                        <p>Search engine optimization,
-                            keyword strategy, and analytics to drive organic traffic and increase brand awareness.
-                        </p>
-                    </div>
-
-                    <div class="service-card-info">
-                        <div class="top-info">
-                            <i class="fa-solid fa-users-gear" style="color: white;"></i>
-                        </div> <br>
-                        <h4>Consulting & Digital Strategy</h4> <br>
+    <!-- ===== ABOUT US ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-label">Who We Are</div>
+            <h2 class="section-title">About Us</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        At <strong>Lutful Digit</strong>, we specialize in turning ideas into powerful digital experiences.
+                        Through professional website and app development, classic graphics, and result-driven promotion,
+                        we help brands build a strong presence that captures attention and drives growth.
+                    </p>
+                    <div class="about-more" id="aboutMore">
                         <p>
-                            Helping businesses plan, structure,
-                            and execute the right digital solutions for sustainable growth.
+                            We believe in blending creativity with strategy, technology with design, and vision with execution.
+                            Our focus is not just on delivering services but on creating lasting value for businesses that want
+                            to stand out and succeed online.
                         </p>
                     </div>
-
-                    <div class="service-card-info">
-                        <div class="top-info">
-                            <i class="fa-solid fa-pen-nib" style="color: white;"></i>
-                        </div> <br>
-                        <h4>Branding & Graphic Design</h4> <br>
-                        <p>Logo design, brand identity,
-                            social media creatives, and stunning visuals that make your business stand out.
-                        </p>
+                    <button class="btn btn-text" id="aboutToggle">
+                        Read More <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="30">0</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
                     </div>
-
+                </div>
+                <div class="about-image">
+                    <div class="about-image-frame">
+                        <img src="images/about-us.jpg" alt="About Lutful Digit">
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- portfolio section -->
-
-        <section class="portfolio-section" id="portfolio">
-
-            <div class="portfolio-container">
-
-                <!-- Section Header -->
-                <div class="portfolio-header intersept">
-                    <h2>Our Recent Projects</h2>
-                    <p>
-                        A selection of projects that showcase our creativity,
-                        strategy, and attention to detail.
-                    </p> <br>
-
-                    <p id="projects-sub">Website section</p>
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-label">What We Offer</div>
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">We are dedicated to serving you with excellence across all these areas.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design & Development</h3>
+                    <p>Building responsive, user-friendly websites that represent your brand and convert visitors into customers.</p>
                 </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>Branding & Graphic Design</h3>
+                    <p>Logo design, brand identity, social media creatives, and stunning visuals that make your business stand out.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                    </div>
+                    <h3>Digital Marketing & Promotion</h3>
+                    <p>Social media marketing, content promotion, ad campaigns, and strategies to boost visibility and reach.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <h3>SEO & Online Growth</h3>
+                    <p>Search engine optimization, keyword strategy, and analytics to drive organic traffic and increase brand awareness.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3>Consulting & Digital Strategy</h3>
+                    <p>Helping businesses plan, structure, and execute the right digital solutions for sustainable growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Portfolio Grid -->
-                <div class="portfolio-grid intersept">
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-label">Our Work</div>
+            <h2 class="section-title">Recent Projects</h2>
+            <p class="section-subtitle" style="text-align:center;margin:0 auto 20px;">
+                A selection of projects that showcase our creativity, strategy, and attention to detail.
+            </p>
 
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <video src="images/osharp.mp4" autoplay muted loop>
-                                Your browser does not support video
-                            </video>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Brand landing page</h3>
-                            <span class="live"><a href="https://lutfuldigit.github.io/osharp/" target="_blank">Go
-                                    live</a></span>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="graphics">Graphics</button>
+            </div>
+
+            <!-- Web Projects -->
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <video src="images/osharp.mp4" autoplay muted loop playsinline></video>
+                        <div class="portfolio-overlay">
+                            <a href="https://lutfuldigit.github.io/osharp/" target="_blank" class="btn btn-outline">
+                                <i class="fa-solid fa-up-right-from-square"></i> Live Preview
+                            </a>
                         </div>
                     </div>
+                    <div class="portfolio-content">
+                        <span>Website</span>
+                        <h3>Brand Landing Page</h3>
+                    </div>
+                </div>
 
-
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="images/drone delivery.jpeg" alt="one delivery.jpeg">
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Drone sales web</h3>
-                            <span class="live">Go live</span>
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/drone delivery.jpeg" alt="Drone sales website">
+                        <div class="portfolio-overlay">
+                            <span class="btn btn-outline"><i class="fa-solid fa-lock"></i> Coming Soon</span>
                         </div>
                     </div>
-
+                    <div class="portfolio-content">
+                        <span>Website</span>
+                        <h3>Drone Sales Web</h3>
+                    </div>
                 </div>
+            </div>
 
-
-                <!-- Section Header  graphics-->
-
-                <div class="portfolio-header">
-
-                    <p id="projects-sub">Graphics section</p>
-                </div>
-
-                <!-- Portfolio Grid -->
-                <div class="graphics-portfolio-grid intersept">
-
-                    <div class="portfolio-graphics">
-                        <div class="portfolio-image">
-                            <img src="images/brand-identity.jpeg" alt="flyer image">
-                        </div>
+            <!-- Graphics Projects -->
+            <h3 style="font-family:var(--font-heading);margin:60px 0 24px;font-size:1.3rem;">Graphics Design</h3>
+            <div class="gallery-wrapper">
+                <button class="gallery-arrow gallery-arrow--left" aria-label="Previous">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="graphics-grid" id="graphicsGallery">
+                    <div class="graphics-card" data-category="graphics" data-animate="left">
+                        <img src="images/brand-identity.jpeg" alt="Brand Identity">
                         <div class="portfolio-content">
                             <h3>Brand Identity</h3>
                         </div>
                     </div>
-
-                    <div class="portfolio-graphics">
-                        <div class="portfolio-image">
-                            <img src="images/eid.jpg" alt="school flyer">
-                        </div>
+                    <div class="graphics-card" data-category="graphics" data-animate="right">
+                        <img src="images/eid.jpg" alt="Eid Greetings">
                         <div class="portfolio-content">
-                            <h3>Eid greetings</h3>
+                            <h3>Eid Greetings</h3>
                         </div>
                     </div>
-
-                    <div class="portfolio-graphics">
-                        <div class="portfolio-image">
-                            <img src="images/SwiftBite.jpg" alt="Logo image">
-                        </div>
+                    <div class="graphics-card" data-category="graphics" data-animate="left">
+                        <img src="images/SwiftBite.jpg" alt="Food Flyer">
                         <div class="portfolio-content">
-                            <h3>food Flyer</h3>
+                            <h3>Food Flyer</h3>
                         </div>
                     </div>
-
-                    <div class="portfolio-graphics">
-                        <div class="portfolio-image">
-                            <img src="images/SwiftBite-logo.jpg" alt="cake flyer">
-                        </div>
+                    <div class="graphics-card" data-category="graphics" data-animate="right">
+                        <img src="images/SwiftBite-logo.jpg" alt="SwiftBite Logo">
                         <div class="portfolio-content">
-                            <h3>SwiftBite-logo</h3>
+                            <h3>SwiftBite Logo</h3>
                         </div>
                     </div>
-
-                    <div class="portfolio-graphics">
-                        <div class="portfolio-image">
-                            <img src="images/osharp.png" alt="cake flyer">
-                        </div>
+                    <div class="graphics-card" data-category="graphics" data-animate="left">
+                        <img src="images/osharp.png" alt="Osharp Logo">
                         <div class="portfolio-content">
-                            <h3>osharp logo</h3>
+                            <h3>Osharp Logo</h3>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
-
-            </div>
-        </section>
-
-
-        <section class="why-choose-us intersept">
-            <div class="why-us-text">
-                <h1>Why Choose Us</h1> <br>
-                <p>Choosing the right digital partner can make all the difference in your growth journey.
-                    At <strong>Lutful Digit,</strong> We don't
-                    just deliver services — we deliver value, creativity, and results that last.
-                </p>
-            </div>
-
-
-            <div class="why-choose-us-flex">
-                <div class="why-us-card">
-                    
-                    <h3> <i class="fa-solid fa-laptop-code"></i> 
-                        Creative & Professional</h3> <br>
-                    <p>We blend
-                        innovation with expertise to craft solutions that look great and work even better.
-                    </p>
-                </div>
-
-                <div class="why-us-card">
-                    <h3><i class="fa-solid fa-pen-nib"></i>
-                        Tailored Solutions</h3> <br>
-                    <p>Every business is unique, so we design strategies that fit your brand's
-                        goals, not a one-size-fits-all approach.
-                    </p>
-                </div>
-
-                <div class="why-us-card">
-                    <h3>  <i class="fa-solid fa-pen-nib"></i>
-                        Result-Driven promotions
-                    </h3> <br>
-                    <p>From design to promotion,
-                        we focus on outcomes that help you grow and succeed online.
-                    </p>
-                </div>
-
-                <div class="why-us-card">
-                    <h3><i class="fa-solid fa-users-gear"> </i>
-                         Reliable & Supportive</h3> <br>
-                    <p>We walk with you every step of the way,
-                        offering clear communication and ongoing support.
-                    </p>
-                </div>
-
-                <div class="why-us-card">
-                    <h3><i class="fa-solid fa-money-bill-trend-up"> </i>
-                        Affordable Service</h3> <br>
-                    <p>High-quality digital services without breaking the bank.
-                    </p>
-                </div>
-
-
-            </div>
-
-            <div class="call-to-act">
-                <p>
-                    With <strong>Lutful Digit,</strong> you get more
-                    than an agency — you get a partner dedicated to helping your brand stand out
-                    and thrive.
-                </p> <br>
-                <div>
-                    <a href="mailto:hammeda582@gmail.com">
-                        <button class="cta" style="color:#fff">
-                            Get In-touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                    </a>
-
-                </div>
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer id="footer">
-        <div class="footer-grid">
-            <div>
-                <img src="images/lut-logo.png" width="80px" alt="">
-                <p>
-                    <strong>OUR SERVICES <i class="fa-solid fa-caret-down"></i></strong> <br>
-                    Web Design & Development <br>
-                    Branding & Graphic Design <br>
-                    Digital Marketing & Promotion <br>
-                    SEO & Online Growth <br>
-                    Consulting & Digital Strategy
-
-                </p>
-            </div>
-
-            <div>
-                <h4>Quick links <i class="fa-solid fa-caret-down"></i></h4>
-                <h4><a href="index.html">Home</a></h4>
-                <h4> <a href="#about-sec">About</a></h4>
-                <h4> <a href="#service-sec">Service</a></h4>
-                <h4> <a href="#portfolio">portfolio</a></h4>
-                <h4> <a href="#">Contact</a></h4>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-location-dot" style="font-size: 0.7rem;"></i> <b> Address:</b> Lagos, Nigeria <br>
-                <i class="fa-solid fa-phone-volume" style="font-size: 0.7rem;"></i> <b>Phone:</b> +2348164438077 <br>
-                <i class="fa-regular fa-envelope" style="font-size: 0.7rem;"></i> <b>Email:</b> hammeda582@gmail.com.com
+                <button class="gallery-arrow gallery-arrow--right" aria-label="Next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </div>
+    </section>
 
-        <p style="text-align: center;">Developed By <b style="color: #0000FF;">Lutful Digit &copy; </b>2026</p>
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-choose-us" id="why-us">
+        <div class="container">
+            <div class="section-label">Why Us</div>
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle" style="text-align:center;margin:0 auto 20px;">
+                Choosing the right digital partner can make all the difference in your growth journey.
+                At <strong style="color:var(--primary);">Lutful Digit</strong>, we don't just deliver services —
+                we deliver value, creativity, and results that last.
+            </p>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Creative & Professional</h3>
+                    <p>We blend innovation with expertise to craft solutions that look great and work even better.</p>
+                </div>
+                <div class="why-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>Tailored Solutions</h3>
+                    <p>Every business is unique, so we design strategies that fit your brand's goals, not a one-size-fits-all approach.</p>
+                </div>
+                <div class="why-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Result-Driven Promotions</h3>
+                    <p>From design to promotion, we focus on outcomes that help you grow and succeed online.</p>
+                </div>
+                <div class="why-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3>Reliable & Supportive</h3>
+                    <p>We walk with you every step of the way, offering clear communication and ongoing support.</p>
+                </div>
+                <div class="why-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                    </div>
+                    <h3>Affordable Service</h3>
+                    <p>High-quality digital services without breaking the bank — premium results at fair prices.</p>
+                </div>
+            </div>
+
+            <div class="why-cta">
+                <p>
+                    With <strong>Lutful Digit</strong>, you get more than an agency —
+                    you get a partner dedicated to helping your brand stand out and thrive.
+                </p>
+                <a href="mailto:hammeda582@gmail.com" class="btn btn-primary btn-lg">
+                    Get In Touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/lut-logo.png" alt="Lutful Digit">
+                <p>
+                    We are a creative digital agency focused on building strong online presences
+                    for businesses of all sizes through web development, graphic design, and digital marketing.
+                </p>
+                <div class="footer-social">
+                    <a href="https://web.facebook.com/lutfuldig" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/+2348164438077" target="_blank" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/lutfuldigit" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/hammedlateef" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Ilorin Phase 2 Estate, Oloje</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +234 816 443 8077</p>
+                <p><i class="fa-regular fa-envelope"></i> hammeda582@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Developed by <strong>Lutful Digit</strong> &copy; 2026. All rights reserved.
+        </div>
     </footer>
+
+    <div class="floating-actions">
+        <button class="float-btn float-top" id="backToTop" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <a href="https://wa.me/+2348164438077?text=Hello%20Lutful%20Digit!%20%F0%9F%91%8B%20I'm%20interested%20in%20your%20services.%20Can%20we%20discuss%20my%20project%3F" target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 
     <script src="index.js"></script>
 </body>
-
 </html>
